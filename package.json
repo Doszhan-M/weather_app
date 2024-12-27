@@ -1,0 +1,38 @@
+{
+  "name": "weather-forecast",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "alpha2-countries": "^1.1.0",
+    "axios": "^1.7.9",
+    "babel-loader": "^9.2.1",
+    "bootstrap": "^5.3.3",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^19.0.0",
+    "react-bootstrap-accordion": "^1.0.0",
+    "react-indiana-drag-scroll": "^2.2.0",
+    "react-preloaders2": "^3.0.5",
+    "react-switch": "^7.1.0",
+    "sitemap-webpack-plugin": "^1.1.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "dotenv": "^16.4.7",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
