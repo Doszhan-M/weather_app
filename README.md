@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dae9abe0-c800-4610-a85f-674adf78ea95/deploy-status)](https://app.netlify.com/sites/neon-weather/deploys)
 
 # Weather Forecast
-- Link to [Netlify](https://neon-weather.netlify.app/)
+- Link to [neon-weather.netlify.app](https://neon-weather.netlify.app/)
 
 <br>
 
