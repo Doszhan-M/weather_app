@@ -14,20 +14,25 @@ import { Sugar } from 'react-preloaders2';
 
 function Theme(props) {
     let [checked, setChecked] = useState(true)
+    let [themeClass, setThemeClass] = useState("dark")
     let [themeBackground, setThemeBackground] = useState(backgroundVideoDark)
     let [poster, setPoster] = useState(backgroundPosterDark)
 
     const themeChange = checked => {
+
         setChecked(checked)
         if (themeBackground == backgroundVideoDark) {
             setPoster(backgroundPosterDay)
             setThemeBackground(backgroundVideoDAy)
             props.setDark(false)
+            setThemeClass("light")
         } else {
             setPoster(backgroundPosterDark)
             setThemeBackground(backgroundVideoDark)
             props.setDark(true)
+            setThemeClass("dark")
         }
+        console.log(themeClass)
     }
     return (
         <div >
@@ -37,9 +42,8 @@ function Theme(props) {
                     uncheckedIcon={<img className="day" src={DayMode} alt="icon_svg" />}
                     handleDiameter={0.5}
                 />
-                
-                <video key={themeBackground} autoPlay muted loop preload="auto" poster={poster} className="preview__video">
-                    <source type="video/mp4" src={themeBackground} />
+                <video key={themeBackground} autoPlay muted loop preload="auto" poster={poster} className={`preview__video ${themeClass}`}>
+                    <source type="video/mp4" src={themeBackground}/>
                 </video>
             </div>
             <Sugar customLoading={props.preloaderStatus} background="linear-gradient(90deg, rgba(28,26,26,1) 0%, rgba(143,56,53,1) 50%, rgba(17,66,186,1) 100%)"/>

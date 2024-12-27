@@ -47,13 +47,33 @@ main {
         width: 100vw;
         height: 100vh;
         z-index: -1;
-        transform: scaleY(1.1) scaleX(1.05);
-
+    
         @media screen and (max-width: 812px) {
             & {
-                transform: scaleY(1.14) scaleX(1.15);
+                object-fit: cover;
             }
         }
+
+        &.dark {
+            transform: scaleY(1.1) scaleX(1.09);
+
+            @media screen and (max-width: 812px) {
+                & {
+                    transform: scaleY(1.2) scaleX(1.1);
+                }
+            }
+        }
+    
+        &.light {
+            transform: scaleY(1.1) scaleX(1.04);
+
+            @media screen and (max-width: 812px) {
+                & {
+                    transform: scaleY(1.2) scaleX(1.1);
+                }
+            }
+        }
+
     }
 }
 
